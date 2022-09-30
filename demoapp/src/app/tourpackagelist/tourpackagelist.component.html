@@ -1,0 +1,20 @@
+<h2>Tour Package List</h2>
+<table class=":table table-stripped">
+    <thead>
+        <tr>
+            <th>Package Id</th>
+            <th>Source place</th>
+            <th>Destination</th>
+            <th>Basic Fare</th>
+        </tr>
+    </thead>
+<tbody>
+
+    <tr *ngFor="let tour of tours">
+        <td>{{tour.package_id}}</td>
+        <td>{{tour.source_place}}</td>
+        <td>{{tour.destination_place}}</td>
+        <td>{{tour.basic_fair}}</td>
+    </tr>
+</tbody>
+</table>
